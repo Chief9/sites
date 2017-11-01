@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>later.nu</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+
+
+	<nav class="nav-main">
+		<div class="logo"> <a href="index.html" id="home">Later.NU</a></div>	
+		<ul>
+			<li>
+				<a href="#" class="nav-item">Menu</a>
+				<div class="nav-content">
+					<div class="nav-sub">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Binnenland</a></li>
+							<li><a href="#">Buitenland</a></li>
+							<li><a href="#">TV-Gids</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Klachten</a></li>		
+							
+						</ul>
+			</li>
+
+			<li>
+				<a href="#" class="nav-item">Binnenland</a>
+				<div class="nav-content">
+					<div class="nav-sub">
+						<ul>
+							<li><a href="#">Actueel</a></li>
+							<li><a href="#">Economie</a></li>
+							<li><a href="#">Sport</a></li>
+							<li><a href="#">Tech</a></li>
+							<li><a href="#">Entertainment</a></li>
+							<li><a href="#">Lifestyle</a></li>
+							<li><a href="#">Overig</a></li>
+							
+						</ul>
+			</li>
+
+			<li>
+				<a href="#" class="nav-item">Buitenland</a>
+				<div class="nav-content">
+					<div class="nav-sub">
+						<ul>
+							<li>
+							<li><a href="#">Actueel</a></li>
+							<li><a href="#">Economie</a></li>
+							<li><a href="#">Sport</a></li>
+							<li><a href="#">Tech</a></li>
+							<li><a href="#">Entertainment</a></li>
+							<li><a href="#">Lifestyle</a></li>
+							<li><a href="#">Pokemon</a></li>
+							</li>
+						</ul>
+			</li>
+
+			<li>
+				<a href="#" class="nav-item">TV-Gids</a>
+			</li>
+
+			<li>
+				<a href="login.html" class="nav-item"> Log-in</a>
+			</li>
+
+		</ul>
+
+</nav>
+
+
+<div id="sidebar">
+	<div class="toggle-btn" onclick="toggleSideBar()">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<ol>Top 5 
+	<li>Tieners plunderen rekeningen via Tikkie </li>
+	<li>Politie houdt kind wakker</li>
+	<li>Boete wegens zingen in de auto</li>
+	<li>Knokpartij in Nijmegen om Zwarte Piet</li>
+	<li>Tieners plunderen rekeningen via Tikkie </li>
+	</ol>
+	
+</div>
+
+
+<div class="spacer">
+</div>
+
+
+
+<div>
+	<div class="container">
+	<img src="img/feest.jpg" class="newsimg">
+	<h2>Lorem ipsum dolor sit amet</h2>
+	<p class="news">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur. Excepteur sint caecat cupidatat non	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		
+	</p>
+	</div>	
+</div>
+<div class="floatclear"></div>
+
+<div class="container">
+<div class="comment">
+	<form> 
+		Username
+		<input type="text" name="username" required>
+		E-mail
+		<input type="text" name="email"  required>
+		Message
+		<input type="text" name="message" style="height:100px">	
+	</form>
+
+	<form>
+	<button id="theButton">Submit</button>
+	</form>
+
+
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+	function toggleSideBar(){
+		document.getElementById("sidebar").classList.toggle('active');
+
+	}
+
+
+
+	document.getElementById("theButton").onclick=submit
+  function submit(){
+    var x = document.getElementsByTagName("input")[0].value
+    var y = document.getElementsByTagName("input")[1].value
+      if (y !== null && x !== null) {
+     alert("Thank you! Your message has been sent for review")
+    }
+
+    else  {
+      alert("Oops something went wrong")
+    }
+  }
+
+
+</script>
+
+
+</body>
+</html>
